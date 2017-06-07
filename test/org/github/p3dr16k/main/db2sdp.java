@@ -1,4 +1,4 @@
-package it.csp.db2json.main;
+package org.github.p3dr16k.main;
 
 import org.github.p3dr16k.db2json.core.GenericSqlManager;
 import org.github.p3dr16k.db2json.properties.PropertiesManager;
