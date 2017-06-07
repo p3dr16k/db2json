@@ -13,8 +13,7 @@ import org.github.p3dr16k.db2json.core.DBManager;
 *
 *DESCRIPTION:  
 *REQUIREMENTS: 
-*AUTHOR:       patrick
-*COMPANY:      CSP s.c. a r.l. "Innovazione nelle ICT"
+*AUTHOR:       Patrick Facco
 *VERSION:      1.0
 *CREATED:      23-apr-2015
 *LICENSE:      GNU/GPLv3
