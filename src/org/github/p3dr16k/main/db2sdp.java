@@ -25,7 +25,12 @@ public class db2sdp
 {
     public static void main(String[] args) throws Exception
     {
-        String conf = "config.properties"; //questo diventa args[0]
+        if(args.length == 0)
+        {
+            System.err.println("Missing config file");
+            System.exit(-1);
+        }
+        String conf = args[0];
         PropertiesManager propertiesManager = new PropertiesManager(conf);
         
         DBManager mysqlmanager = new GenericSqlManager(propertiesManager);
