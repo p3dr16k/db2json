@@ -25,16 +25,13 @@ public class db2sdp
 {
     public static void main(String[] args) throws Exception
     {
-        String conf = "/home/patrick/Sviluppo/db2sdp/config.properties"; //questo diventa args[0]
+        String conf = "config.properties"; //questo diventa args[0]
         PropertiesManager propertiesManager = new PropertiesManager(conf);
         
         DBManager mysqlmanager = new GenericSqlManager(propertiesManager);
         mysqlmanager.executeQueryDB(propertiesManager.getExtractQuery());
         JSONArray res = mysqlmanager.jsonize();
         mysqlmanager.disconnectDB();
-        for(int i = 0; i < res.length(); i++)
-        { 
-            System.out.println(res.get(i));            
-        }
+        System.out.println(res);
     }    
 }
